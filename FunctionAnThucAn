@@ -1,0 +1,3 @@
+bool KiemTraAnThucAn(CONRAN &r, ThucAn &t) {
+    return (r.A[0].x == t.P.x && r.A[0].y == t.P.y);
+}
