@@ -1,0 +1,10 @@
+class ThucAn {
+public:
+    Point P;
+    int colorFood = 4;
+
+    ThucAn(int w, int h) {
+        srand(time(0));
+        TaoMoi(w, h);
+    }
+}
