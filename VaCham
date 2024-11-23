@@ -1,0 +1,9 @@
+bool KiemTraVaCham(CONRAN &r, int width, int height) {
+    if (r.A[0].x <= 0 || r.A[0].x >= width || r.A[0].y <= 0 || r.A[0].y >= height)
+        return true;
+    for (int i = 1; i < r.DoDai; i++) {
+        if (r.A[0].x == r.A[i].x && r.A[0].y == r.A[i].y)
+            return true;
+    }
+    return false;
+}
